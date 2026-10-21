@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Semáforo da Acessibilidade: aprenda sobre comunicação inclusiva, autismo e respeito no ambiente escolar.">
+  <title>Semáforo da Acessibilidade</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <a class="logo" href="#inicio">🚦 Semáforo da Acessibilidade</a>
+    <nav aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#semaforo">Semáforo</a>
+      <a href="#comunicacao">Comunicação</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#conclusao">Conclusão</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="etiqueta">Educação • Respeito • Inclusão</span>
+        <h1>Pequenas atitudes fazem uma grande diferença!</h1>
+        <p>
+          Aprenda a tornar a escola um ambiente mais acolhedor
+          para pessoas autistas, respeitando suas necessidades,
+          seus limites e suas diferentes formas de comunicação.
+        </p>
+        <a class="botao" href="#semaforo">Explorar o semáforo</a>
+      </div>
+
+      <div class="hero-ilustracao">
+        <svg viewBox="0 0 220 340" role="img"
+          aria-labelledby="titulo-semaforo descricao-semaforo">
+          <title id="titulo-semaforo">Ilustração de um semáforo</title>
+          <desc id="descricao-semaforo">
+            Semáforo com três luzes: verde para comunicação acolhedora,
+            amarela para atenção e adaptação e vermelha para parar e reavaliar.
+          </desc>
+          <rect x="55" y="15" width="110" height="250"
+            rx="25" fill="#263238"/>
+          <circle cx="110" cy="70" r="32" fill="#F04444"/>
+          <circle cx="110" cy="140" r="32" fill="#FFD447"/>
+          <circle cx="110" cy="210" r="32" fill="#35C878"/>
+          <rect x="99" y="265" width="22" height="55" fill="#52616B"/>
+          <rect x="65" y="316" width="90" height="12" rx="6" fill="#52616B"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="secao" id="semaforo">
+      <div class="cabecalho-secao">
+        <span class="etiqueta">Aprenda interagindo</span>
+        <h2>Como funciona o semáforo?</h2>
+        <p>Selecione uma das luzes para conhecer as orientações.</p>
+      </div>
+
+      <div class="semaforo-layout">
+        <div class="semaforo" aria-label="Semáforo interativo">
+          <button class="luz vermelha" data-cor="vermelho"
+            aria-pressed="false" aria-controls="mensagem-semaforo">
+            <span class="simbolo" aria-hidden="true">✋</span>
+            <span>Vermelho</span>
+            <small>Pare e reavalie</small>
+          </button>
+          <button class="luz amarela" data-cor="amarelo"
+            aria-pressed="false" aria-controls="mensagem-semaforo">
+            <span class="simbolo" aria-hidden="true">⚠</span>
+            <span>Amarelo</span>
+            <small>Observe e adapte</small>
+          </button>
+          <button class="luz verde" data-cor="verde"
+            aria-pressed="true" aria-controls="mensagem-semaforo">
+            <span class="simbolo" aria-hidden="true">✓</span>
+            <span>Verde</span>
+            <small>Pode continuar</small>
+          </button>
+        </div>
+
+        <article class="mensagem" id="mensagem-semaforo"
+          aria-live="polite" aria-atomic="true">
+          <span class="etiqueta">🟢 Comunicação acolhedora</span>
+          <h3>Verde — Pode continuar!</h3>
+          <p>Atitudes que favorecem uma comunicação respeitosa:</p>
+          <ul>
+            <li>Falar com respeito e clareza.</li>
+            <li>Dar tempo para a pessoa responder.</li>
+            <li>Utilizar imagens, textos e instruções objetivas.</li>
+            <li>Respeitar as diferentes formas de comunicação.</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="nota">
+        Importante: as cores orientam nossas atitudes, não avaliam
+        a pessoa autista. Cada pessoa tem necessidades individuais.
+      </p>
+    </section>
+
+    <section class="secao fundo-suave" id="comunicacao">
+      <div class="cabecalho-secao">
+        <span class="etiqueta">No dia a dia escolar</span>
+        <h2>Comunicação inclusiva</h2>
+        <p>Veja como pequenas mudanças podem melhorar a convivência.</p>
+      </div>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <span class="icone" aria-hidden="true">💚</span>
+          <h3>Seja claro e respeitoso</h3>
+          <p>Use frases objetivas, explique as atividades com clareza
+            e evite ironias ou expressões ambíguas.</p>
+          <p class="exemplo"><strong>Exemplo:</strong> explique cada
+            etapa de uma tarefa separadamente.</p>
+        </article>
+
+        <article class="cartao">
+          <span class="icone" aria-hidden="true">⏳</span>
+          <h3>Respeite o tempo</h3>
+          <p>Nem todas as pessoas respondem da mesma maneira ou
+            na mesma velocidade. Evite pressionar.</p>
+          <p class="exemplo"><strong>Exemplo:</strong> faça uma pergunta
+            e aguarde a resposta com tranquilidade.</p>
+        </article>
+
+        <article class="cartao">
+          <span class="icone" aria-hidden="true">🧩</span>
+          <h3>Ofereça alternativas</h3>
+          <p>Algumas pessoas preferem falar; outras podem usar escrita,
+            imagens, gestos ou comunicação alternativa.</p>
+          <p class="exemplo"><strong>Exemplo:</strong> permita responder
+            oralmente ou por escrito.</p>
+        </article>
+
+        <article class="cartao">
+          <span class="icone" aria-hidden="true">🔇</span>
+          <h3>Cuide do ambiente</h3>
+          <p>Excesso de barulho, luzes ou informações pode dificultar
+            a participação de algumas pessoas.</p>
+          <p class="exemplo"><strong>Exemplo:</strong> ofereça um espaço
+            mais tranquilo quando necessário.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="quiz">
+      <div class="cabecalho-secao">
+        <span class="etiqueta">Teste seus conhecimentos</span>
+        <h2>Quiz da inclusão</h2>
+        <p>Responda às perguntas e descubra o que aprendeu.</p>
+      </div>
+
+      <form id="form-quiz">
+        <fieldset class="pergunta">
+          <legend>1. Como devemos agir quando uma pessoa demora para responder?</legend>
+          <label><input type="radio" name="q1" value="a" required>
+            Pressioná-la para responder rapidamente.</label>
+          <label><input type="radio" name="q1" value="b">
+            Dar tempo e respeitar seu ritmo.</label>
+          <label><input type="radio" name="q1" value="c">
+            Ignorar a pessoa.</label>
+        </fieldset>
+
+        <fieldset class="pergunta">
+          <legend>2. Qual atitude ajuda na comunicação inclusiva?</legend>
+          <label><input type="radio" name="q2" value="a" required>
+            Dar muitas instruções de uma só vez.</label>
+          <label><input type="radio" name="q2" value="b">
+            Exigir que todos se comuniquem da mesma maneira.</label>
+          <label><input type="radio" name="q2" value="c">
+            Usar instruções claras e oferecer alternativas.</label>
+        </fieldset>
+
+        <fieldset class="pergunta">
+          <legend>3. O que significa o amarelo no semáforo?</legend>
+          <label><input type="radio" name="q3" value="a" required>
+            Observar a situação e adaptar a comunicação.</label>
+          <label><input type="radio" name="q3" value="b">
+            Parar de conversar com a pessoa.</label>
+          <label><input type="radio" name="q3" value="c">
+            Continuar sem verificar as necessidades.</label>
+        </fieldset>
+
+        <fieldset class="pergunta">
+          <legend>4. Todas as pessoas autistas têm as mesmas necessidades?</legend>
+          <label><input type="radio" name="q4" value="a" required>
+            Sim, todas são iguais.</label>
+          <label><input type="radio" name="q4" value="b">
+            Não, cada pessoa tem características e necessidades individuais.</label>
+          <label><input type="radio" name="q4" value="c">
+            Sim, basta utilizar uma única estratégia.</label>
+        </fieldset>
+
+        <fieldset class="pergunta">
+          <legend>5. Para que serve o semáforo da acessibilidade?</legend>
+          <label><input type="radio" name="q5" value="a" required>
+            Para classificar o comportamento das pessoas autistas.</label>
+          <label><input type="radio" name="q5" value="b">
+            Para determinar quem pode participar das atividades.</label>
+          <label><input type="radio" name="q5" value="c" required>
+            Para conscientizar sobre atitudes inclusivas e respeitosas.</label>
+        </fieldset>
+
+        <button class="botao" type="submit">Conferir respostas</button>
+        <button class="botao botao-secundario" type="reset">
+          Refazer quiz
+        </button>
+      </form>
+
+      <div id="resultado-quiz" class="resultado" aria-live="polite"
+        aria-atomic="true" tabindex="-1" hidden></div>
+    </section>
+
+    <section class="conclusao" id="conclusao">
+      <span class="etiqueta">Nossa mensagem</span>
+      <h2>Incluir é respeitar as diferenças!</h2>
+      <p>
+        Cada pessoa tem seu jeito de aprender, sentir e se comunicar.
+        Uma escola acessível é construída com empatia, respeito,
+        escuta e oportunidades para todos.
+      </p>
+      <a class="botao botao-claro" href="#inicio">Voltar ao início ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Semáforo da Acessibilidade • Projeto educativo escolar</p>
+    <p>Respeito, acessibilidade e inclusão todos os dias.</p>
+  </footer>
+</body>
+</html>
